@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+      "build:css": "tailwindcss build src/index.css -o dist/output.css",
+      "watch:css": "tailwindcss build src/index.css -o dist/output.css --watch",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
