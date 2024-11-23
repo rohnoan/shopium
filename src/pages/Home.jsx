@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Animation from '../components/Animation'
 
 export default function Home() {
   return (
-    <div className='mt-[120px]  text-[30px]'>
-      hi
+    <div>
+      <Animation/>
     </div>
   )
 }
