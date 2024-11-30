@@ -29,9 +29,9 @@ export default function Animation() {
 
 
   return (
-    <div className='mt-[120px] flex justify-center align-middle'>
+    <div className='mt-[120px] flex justify-center align-middle rounded-lg'>
         <button onClick={next} className='w-[30px] bg-slate-600 mt-[150px] h-[50px] rounded-[25px]'>&lt;</button>
-      <div className='flex justify-center align-middle h-[350px] w-[600px] border border-black'>
+      <div className='flex justify-center align-middle h-[350px] w-[600px] border-[#714bb9] p-[20px] border-[10px] bg-white '>
         
         <div className='flex justify-center align-middle'>
         {products.length > 0 &&<img src={products[index].image} alt="" />}

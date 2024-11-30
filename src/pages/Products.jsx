@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import ProductList from '../components/ProductList';
+
 
 export default function Products() {
   return (
-    <div>
-      this is the products page
+    <div className="mt-[120px] text-black">
+      <div>
+        <ProductList/>
+      </div>
     </div>
-  )
+  );
 }
