@@ -36,6 +36,7 @@ export default function ProductList() {
     return (
         <div className="product-list">
       {/* Search Input */}
+      <div className='flex   justify-center'>
       <input
         type="text"
         placeholder="Search for products..."
@@ -43,6 +44,7 @@ export default function ProductList() {
         onChange={handleSearchChange}
         className="p-2 border border-gray-300 rounded mb-4"
       />
+      </div>
 
       {/* Render filtered products */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
