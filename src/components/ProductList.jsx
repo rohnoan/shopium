@@ -42,7 +42,7 @@ export default function ProductList() {
         placeholder="Search for products..."
         value={searchQuery}
         onChange={handleSearchChange}
-        className="p-2 border border-gray-300 rounded mb-4"
+        className="p-2 border w-[400px] border-gray-800 rounded mb-4"
       />
       </div>
 
