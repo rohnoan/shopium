@@ -63,7 +63,7 @@ const MarqueeEffect = () => {
   `;
 
   return (
-    <div className="mt-[40px]" style={containerStyle}>
+    <div className="mb-[10px]" style={containerStyle}>
       <style>{keyframesStyle}</style>
       <div style={marqueeStyle}>
         <div style={marqueeBlurStyle} aria-hidden="true">
