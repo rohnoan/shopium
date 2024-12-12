@@ -1,21 +1,18 @@
 import React from 'react'
+import MarqueeComponent from '../components/MarqueeComponent'
 import Animation from '../components/Animation'
+import Anim from '../components/Anim'
 export default function Home() {
   return (
-    <div className="mt-[120px]">
-  <div className="flex justify-between items-center px-4">
-    {/* SHOP BOLD LIVE BOLDER Section */}
-    <div className="flex flex-col justify-center items-start md:text-4xl lg:text-6xl">
-      <div className='text-black font-semibold'>SHOP BOLD.</div>
-      <div className='text-[#714bb9] font-extrabold'>LIVE BOLDER.</div>
+    <div>
+      <MarqueeComponent/>
+      <div className="flex justify-between items-center">
+        <div className="flex-1">
+        <Animation />
+        </div>
+        <Anim/>
+      </div>
     </div>
-
-    {/* Animation Component */}
-    <div className='mr-[20px] flex justify-center items-center   '>
-    <Animation />
-    </div>
-  </div>
-  </div>
 
   );
 }

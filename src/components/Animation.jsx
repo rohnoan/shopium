@@ -1,8 +1,15 @@
 import React from 'react'
 import { useEffect,useState } from 'react';
+import camera from '../assets/camera.png'
+import image from '../assets/image.png'
+import jacket from '../assets/jacket.png'
+import laptop from '../assets/laptop.png'
+import makeup from '../assets/makeup.png'
+import perfume from '../assets/perfume.png'
+import shoes from '../assets/shoes.png'
 export default function Animation() {
 
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState([camera,image,jacket,laptop,makeup,perfume,shoes]);
     const[index,setIndex]=useState(0);
 
     const next=()=>{
@@ -12,34 +19,26 @@ export default function Animation() {
         setIndex((prevIndex) => (prevIndex - 1 + products.length) % products.length);
     };
     
-
     useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
-          .then(res => res.json())
-          .then(data => setProducts(data))
-          .catch(error => console.error('Error fetching data', error));
-      }, []);
-    useEffect(()=>{
-        if(products.length>0){
-            const interval=setInterval(()=>{
-                setIndex((prevIndex)=>(prevIndex+1)%products.length);
-            },4000);
-        return ()=>clearInterval(interval);}
-        },[products]);
+      const interval = setInterval(next, 1500); // Change every 1.5 seconds (1500ms)
+  
+      return () => {
+        clearInterval(interval); // Clear interval when component unmounts
+      };
+    }, [next]);
 
 
   return (
-    <div className='mt-[120px] flex justify-center align-middle rounded-lg'>
-        <button onClick={next} className='w-[30px] bg-slate-600 mt-[150px] h-[50px] rounded-[25px]'>&lt;</button>
-      <div className='flex justify-center align-middle h-[350px] w-[600px] border-[#714bb9] p-[20px] border-[10px] bg-white '>
+    <div className='flex w-full justify-center align-middle rounded-lg'>
+      <div className='flex justify-center align-middle h-[400px] w-[600px]  p-[20px] bg-white '>
         
         <div className='flex justify-center align-middle'>
-        {products.length > 0 &&<img src={products[index].image} alt="" />}
+        {products.length > 0 &&<img src={products[index]} alt="" />}
         
         </div>
       </div>
       
-      <button onClick={prev} className='w-[30px]  bg-slate-600  mt-[150px] h-[50px] rounded-full'>&gt;</button>
+      
     </div>
 
     )

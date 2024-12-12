@@ -9,9 +9,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contact from './pages/Contact'
 import Cart from './pages/Cart'
 import NotFound from './pages/NotFound'
+import Footer from './components/Footer'
 export default function App() {
   return (
     <>
+    <MegaSale/>
     <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>} />
@@ -20,6 +22,7 @@ export default function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
+    <Footer/>
     </>
     
   )

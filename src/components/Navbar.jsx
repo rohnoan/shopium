@@ -13,7 +13,7 @@ export default function Navbar() {
     < div>
       
       
-      <div className=' flex items-center justify-between h-[35px] bg-gradient-to-r from-violet-200 to-violet-700 px-4 md:px-8 w-full box-border fixed top-0 z-0'>
+      <div className=' flex items-center justify-between h-[35px] bg-violet-400 px-4 md:px-8 w-full box-border fixed top-0 z-500'>
       <div className='mr-[2px]'>
         <img className='bg-[#714bb9]  shadow-sm rounded-md min-w-[90px] h-[30px] ' src={logo} alt="Logo" />
       </div>
