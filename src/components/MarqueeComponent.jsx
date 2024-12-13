@@ -12,6 +12,7 @@ const MarqueeEffect = () => {
     width: "100%",
     padding: "3em 1em",
     position: "relative",
+    zIndex: 1, // Ensure this doesn't overlap higher-level elements
   };
 
   const marqueeStyle = {
@@ -68,7 +69,7 @@ const MarqueeEffect = () => {
       <div style={marqueeStyle}>
         <div style={marqueeBlurStyle} aria-hidden="true">
           <p className="marquee_text" style={{ filter: "blur(0.07em)" }}>
-          SHOP BOLD. LIVE BOLD. SHOP SHOPIUM.
+            SHOP BOLD. LIVE BOLD. SHOP SHOPIUM.
           </p>
         </div>
         <div style={marqueeClearStyle}>
@@ -76,8 +77,7 @@ const MarqueeEffect = () => {
         </div>
       </div>
 
-      <p style={textStyle}>
-      </p>
+      <p style={textStyle}></p>
     </div>
   );
 };

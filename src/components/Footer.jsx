@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="bg-violet-400 mt-[100px] text-white py-6">
+    <footer className="bg-violet-400 mt-[100px] h-[550px] text-white py-6">
       <div className="container mx-auto px-4 max-w-full">
         {/* Footer Content */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full">
@@ -35,9 +35,9 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
             <ul className="text-sm sm:text-base space-y-2">
-              <li>Email: rohan@gmail.com</li>
-              <li>Phone: +91 9837483472</li>
-              <li>Address: mannat,bombay</li>
+              <li>Email: shopium@gmail.com</li>
+              <li>Phone: +91 7400182456</li>
+              <li>Address: बंबई</li>
             </ul>
           </div>
         </div>
@@ -49,8 +49,12 @@ export default function Footer() {
           with love &lt;3
         </div>
         <div className="text-center text-sm sm:text-base   pt-4">
-          rohnoan
+          <a target='_blank' href="https://github.com/rohnoan">
+          rohnoan</a>
         </div>
+      </div>
+      <div>
+
       </div>
     </footer>
   );
