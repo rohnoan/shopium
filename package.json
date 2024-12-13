@@ -3,14 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://rohnoan.github.io/shopium",
   "scripts": {
     "dev": "vite",
   "build:css": "tailwindcss build src/index.css -o dist/output.css",
   "watch:css": "tailwindcss build src/index.css -o dist/output.css --watch",
-  "build": "vite build",
-  "predeploy": "npm run build",  
-  "deploy": "gh-pages -d dist",  
+  "build": "vite build", 
   "lint": "eslint .",
   "preview": "vite preview"
   },
