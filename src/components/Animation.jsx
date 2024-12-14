@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import a from '../assets1/a.jpg';
-import b from '../assets1/b.jpg';
-import c from '../assets1/c.webp';
-import d from '../assets1/d.webp';
-import f from '../assets1/f.jpg';
-import g from '../assets1/g.webp';
-import h from '../assets1/h.webp';
-import j from '../assets1/j.webp';
+import a from '../assets/camera.jpg';
+import b from '../assets/jacket.jpg';
+import c from '../assets/perfume.jpg';
+import d from '../assets/shoes.jpg';
+import f from '../assets/image.jpg';
+import g from '../assets/laptop.jpg';
+import j from '../assets/makeup.jpg';
+
+
 
 export default function Animation() {
-  const [products, setProducts] = useState([a, b, c, d, f, g, h, j]);
+  const [products, setProducts] = useState([a, b, c, d, f, g, j]);
   const [index, setIndex] = useState(0);
 
   const next = () => {
@@ -26,7 +27,7 @@ export default function Animation() {
   }, [next]);
 
   return (
-    <div className="mt-5 bg-violet-400 flex justify-center items-center rounded-lg w-full sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px]">
+    <div className="mt-5  flex justify-center items-center rounded-lg w-full sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px]">
       <div className="flex justify-center items-center h-fit w-fit p-[20px]">
         <div className="flex justify-center items-center">
           {products.length > 0 && <img src={products[index]} alt="product" />}

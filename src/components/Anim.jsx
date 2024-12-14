@@ -35,7 +35,7 @@ export default function Animation() {
 
 
   return (
-    <div className="mt-5 bg-violet-400 flex justify-center items-center rounded-lg w-full sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px]">
+    <div className="mt-5  flex justify-center items-center rounded-lg w-full sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px]">
       <div className="flex justify-center items-center h-fit w-fit p-[20px]">
         <div className="text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
         {products.length > 0 &&<img src={products[index]} alt="" />}
