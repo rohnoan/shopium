@@ -27,7 +27,7 @@ export default function Home() {
 
       <div className="flex mt-[50px] text-4xl bg-violet-400 justify-center">
         <div className="text-5xl mt-[50px] mb-[50px]">
-          WHY <span className="text-white font-extrabold">SHOPIUM</span> ?
+           why <span className="text-white font-extrabold">SHOPIUM</span>?
         </div>
       </div>
 
