@@ -3,7 +3,7 @@ import React from 'react';
 export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-[#714bb9] mb-6">Contact Us</h1>
+      <h1 className="text-6xl font-bold text-black mb-6">CONTACT US</h1>
       <form className="w-full max-w-md bg-white p-8 rounded shadow-lg">
         <div className="mb-4">
           <label className="block text-black text-sm font-bold mb-2" htmlFor="name">
@@ -40,7 +40,8 @@ export default function Contact() {
         </div>
         <button
           type="submit"
-          className="w-full bg-[#714bb9] text-white py-2 px-4 rounded hover:bg-black transition duration-200"
+          className="w-full bg-black
+           text-white py-2 px-4 rounded hover:bg-black transition duration-200"
         >
           Send Message
         </button>

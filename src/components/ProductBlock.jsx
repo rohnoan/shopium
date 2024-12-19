@@ -34,7 +34,7 @@ export default function ProductBlock({ title, image, price, id }) {
         <p className="text-xl font-bold text-gray-600 mt-2">${price}</p>
         <button
           onClick={handleAddToCart}
-          className="mt-4 px-4 py-2 bg-violet-400 text-white font-semibold rounded-lg w-full hover:bg-violet-500 transition duration-200 text-sm"
+          className="mt-4 px-4 py-2 bg-black text-white font-semibold rounded-lg w-full hover:bg-slate-700 transition duration-200 text-sm"
         >
           Add to Cart
         </button>
@@ -43,9 +43,11 @@ export default function ProductBlock({ title, image, price, id }) {
       {/* "Added to Cart" Message */}
       {showMessage && (
         <div
-          className="absolute h-[60px] bottom-4 left-1/2 transform -translate-x-1/2 bg-slate-500 text-white text-center py-2 px-4 rounded-3xl w-[100px]  text-sm"
+          className="flex z-1000 relative h-[50px]  justify-center items-center bottom-4 left-1/2 right-1/2 transform -translate-x-1/2 bg-slate-500 text-white text-center py-2 px-4 rounded-3xl w-[100px]  text-sm"
         >
-          Added to Cart
+          <div>
+            added to cart
+          </div>
         </div>
       )}
     </div>

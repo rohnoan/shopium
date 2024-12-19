@@ -16,17 +16,17 @@ export default function Home() {
       {/* Flex container for Anim and Animation components */}
       <div className='flex flex-row flex-1'>
       <div className="flex flex-col gap-6 sm:flex-row sm:flex-1 sm:justify-center lg:flex-row xl:flex-row sm:space-x-6">
-        <div className="bg-violet-400 sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px]">
+        <div className="bg-blue-800 sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px]">
           <Anim />
         </div>
-        <div className="bg-violet-400 sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px]">
+        <div className="bg-blue-800 sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px]">
           <Animation />
         </div>
       </div>
       </div>
 
-      <div className="flex mt-[50px] text-4xl bg-violet-400 justify-center">
-        <div className="text-5xl mt-[50px] mb-[50px]">
+      <div className="flex mt-[50px] text-4xl bg-[#090909] justify-center">
+        <div className="text-5xl text-white mt-[50px] mb-[50px]">
            why <span className="text-white font-extrabold">SHOPIUM</span>?
         </div>
       </div>

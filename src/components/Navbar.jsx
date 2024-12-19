@@ -14,13 +14,13 @@ export default function Navbar() {
   const routes = ["/", "/products", "/cart", "/contact"];
 
   return (
-    <div className="w-full fixed top-0 z-50 shadow-md bg-violet-400">
+    <div className="w-full fixed top-0 z-50 shadow-md bg-[#FF9000]">
       {/* Navbar Container */}
       <div className="flex items-center justify-between px-4 md:px-8 h-[50px] max-w-screen-xl mx-auto">
         {/* Logo Section */}
         <div>
           <img
-            className="bg-[#714bb9] shadow-sm rounded-md w-[90px] h-[40px]"
+            className="bg-[#C9F0FF] shadow-sm rounded-md w-[90px] h-[40px]"
             src={logo}
             alt="Logo"
           />
@@ -53,7 +53,7 @@ export default function Navbar() {
         <div
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } md:flex md:items-center md:space-x-4 font-semibold text-black absolute md:static bg-violet-400 w-full md:w-auto left-0 top-[50px] md:top-auto`}
+          } md:flex md:items-center md:space-x-4 font-semibold text-black absolute md:static bg-[#FF9000] w-full md:w-auto left-0 top-[50px] md:top-auto`}
         >
           {["HOME", "PRODUCTS", "CART", "CONTACT"].map((label, index) => (
             <Link
@@ -62,7 +62,7 @@ export default function Navbar() {
               onClick={() => handleButtonClick(index)}
               className={`block md:inline-block w-full md:w-auto px-4 py-2 md:px-6 rounded ${
                 navButton === index
-                  ? "text-white"
+                  ? "text-xl"
                   : "text-black hover:text-white"
               }`}
             >

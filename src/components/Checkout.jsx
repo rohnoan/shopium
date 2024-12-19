@@ -16,7 +16,7 @@ export default function Checkout() {
 
   return (
     <div className="mt-[100px] px-4 py-6 bg-white shadow-lg rounded-lg max-w-3xl mx-auto">
-      <h2 className="text-4xl font-bold text-center mb-6 text-violet-400">CHECKOUT</h2>
+      <h2 className="text-6xl font-bold text-center mb-6 text-black">CHECKOUT</h2>
       
       {/* Cart Summary */}
       {cart.length === 0 ? (
@@ -46,7 +46,7 @@ export default function Checkout() {
           </div>
 
           {/* Checkout Button */}
-          <button className="mt-6 w-full py-2 bg-violet-400 text-white font-semibold rounded-lg hover:bg-violet-500 transition duration-200">
+          <button className="mt-6 w-full py-2 bg-black text-white font-semibold rounded-lg hover:bg-slate-300 transition duration-200">
             COMPLETE CHECKOUT
           </button>
         </div>

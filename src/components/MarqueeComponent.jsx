@@ -37,10 +37,7 @@ const MarqueeEffect = () => {
     inset: 0,
     display: "grid",
     placeItems: "center",
-    backgroundColor: "transparent",
-    backgroundImage:
-      "linear-gradient(to right, white, 1rem, transparent 50%), linear-gradient(to left, white, 1rem, transparent 50%)",
-    filter: "contrast(15)",
+    
   };
 
   const marqueeClearStyle = {
